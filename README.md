@@ -1,34 +1,41 @@
 **SQL Project on Pizza Sales**
+
 **Project Overview**
+
 This project involves analyzing the sales data of a pizza restaurant to derive insights that can help improve business operations and profitability. The analysis covers basic metrics, intermediate evaluations, and advanced revenue analysis.
 
 **Dataset**
 The dataset consists of four main tables:
 
 **pizza_types**
+
 pizza_type_id (INT, PRIMARY KEY)
 name (VARCHAR(100))
 category (VARCHAR(50))
 ingredients (TEXT)
 
 **Pizzas**
+
 pizza_id (INT, PRIMARY KEY)
 pizza_type_id (INT, FOREIGN KEY references pizza_types(pizza_type_id))
 size (VARCHAR(20))
 price (DECIMAL(10, 2))
 
 **Orders**
+
 order_id (INT, PRIMARY KEY)
 order_date (DATE)
 order_time (TIME)
 
 **order_details**
+
 order_details_id (INT, PRIMARY KEY)
 order_id (INT, FOREIGN KEY references Orders(order_id))
 pizza_id (INT, FOREIGN KEY references Pizzas(pizza_id))
 quantity (INT)
 
 **Cardinality and Relationships**
+
 pizza_types to Pizzas: 1
 pizza_types is connected to Pizzas through pizza_type_id.
 Pizzas to order_details: 1
