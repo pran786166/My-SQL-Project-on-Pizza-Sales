@@ -65,7 +65,11 @@ Determine the top 3 most ordered pizza types based on revenue for each pizza cat
 How to Use This Project
 Setup the Database: Create the database and tables using the provided SQL schema.
 Insert Data: Populate the tables with data relevant to the pizza sales.
-Run Queries: Execute the provided SQL queries to perform the analyses outlined in the objectives.
+
+
+**Run Queries:**
+
+Execute the provided SQL queries to perform the analyses outlined in the objectives.
 Analyze Results: Review the query results to gain insights into the pizza sales performance.
 
 **Conclusion**
